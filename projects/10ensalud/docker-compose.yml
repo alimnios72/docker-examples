@@ -1,0 +1,15 @@
+nginx:
+    image: alimnios72/nginx
+    ports:
+        - 8080:80
+    volumes:
+        - ./src:/var/www
+        - ./conf/vhost.conf:/etc/nginx/sites-enabled/vhost.conf
+#    links:
+#        - fpm
+
+#fpm:
+#    image: alimnios72/php-fpm
+#    volumes:
+#        - ./conf/php-fpm.conf:/etc/php5/fpm/php-fpm.conf
+#        - ./src:/var/www
