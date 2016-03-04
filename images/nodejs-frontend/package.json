@@ -1,0 +1,14 @@
+{
+    "name" : "frontend-development",
+    "description": "Basic components to develop a frontend application",
+    "version" : "0.0.2",
+    "author" : "Jorge Zapata",
+    "license" : "GPL-3.0",
+    "dependencies" : {
+        "bower" : "~1.7.6",
+        "grunt-cli" : "^0.1.13",
+        "less" : "~2.5.1",
+        "jasmine" : "~2.4.1",
+        "karma" : "^0.13.21"
+    }
+}
