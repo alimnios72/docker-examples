@@ -1,10 +1,9 @@
 mysql:
-    image: sameersbn/mysql
+    image: mysql/mysql-server:5.5
+    container_name: mysql
     ports:
         - 3306:3306
     volumes:
         - /var/lib/mysql
     environment:
-        - DB_NAME=demoDb
-        - DB_USER=root
-        - DB_PASS=m4st3rp455
+        - MYSQL_ROOT_PASSWORD=m4st3rp455
